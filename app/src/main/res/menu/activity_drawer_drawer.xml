@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_order"
+            android:title="Pesanan" />
+     <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_shopping_basket"
+        android:title="Keranjang" />
+
+    <!--<item-->
+        <!--android:id="@+id/nav_help"-->
+        <!--android:icon="@drawable/ic_help_black_24dp"-->
+        <!--android:title="Bantuan" />-->
+
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@drawable/ic_login_white_24dp"
+        android:title="Login" />
+
+</menu>
+
+
+

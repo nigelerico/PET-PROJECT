@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/carddviewuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/gambaruser"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_person_pin_green_150dp" />
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nama"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="email"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                />
+
+            <TextView
+                android:id="@+id/txt_notelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no handphone"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/btn_lihat_buku"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_xml_btn_green"
+                android:text="Lihat"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

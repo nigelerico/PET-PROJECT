@@ -1,0 +1,127 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="40dp"
+            >
+
+        <ImageView
+            android:id="@+id/gambar_buku_edit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sayur"
+            />
+
+        <Button
+            android:id="@+id/btn_ubahgambarbukuedit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:drawableLeft="@drawable/ic_add_a_photo"
+            android:paddingLeft="5dp"
+            android:text="Ubah"
+            android:textColor="#ffff"
+            android:textSize="14sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/txt_bukunama"
+                android:hint="Nama Buku"
+                android:drawablePadding="5dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txt_hargabuku"
+                android:hint="Harga"
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinnerkuantitas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/kuantitas"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txt_beratbuku"
+                android:hint="Berat"
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <Button
+                android:id="@+id/button_ubah"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/selector_xml_btn_green"
+                android:text="Ubah"
+                android:textColor="#ffffff"
+                />
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_xml_btn_yellow"
+                android:text="Hapus"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

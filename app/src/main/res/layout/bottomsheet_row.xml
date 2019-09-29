@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_layout_bottom_sheet"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="98dp"
+            android:layout_height="87dp"
+            android:contentDescription="@string/todo"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="@string/bayam"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kuantitasbarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga perbuku"
+            android:layout_below="@id/itemTitle"
+            android:layout_toRightOf="@id/imageView"
+            android:textColor="#808080"
+            android:layout_marginTop="2dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="9dp"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="@string/rp_8_000"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:layout_below="@id/kuantitasbarang"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/itemPrice"
+            android:background="@drawable/custom_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp">
+
+            <TextView
+                android:id="@+id/textView_jumlahBuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

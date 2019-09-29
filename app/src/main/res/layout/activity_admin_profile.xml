@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eae7e7"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="fill"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:contentDescription="profile image"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"/>
+
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_edit_white_24dp" />
+
+            <Button
+                android:id="@+id/button_ubah_gambar"
+                android:layout_width="77dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_xml_btn_yellow"
+                android:drawableLeft="@drawable/ic_add_a_photo"
+                android:paddingLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="Ubah"
+                android:textColor="#ffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="#ffffff">
+
+
+            <EditText
+                android:id="@+id/editTextnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="22"
+                android:hint="Nama"
+                android:drawableLeft="@drawable/ic_man_user"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextnama"
+                android:layout_marginTop="5dp"
+                android:ems="22"
+                android:drawableLeft="@drawable/ic_email_pink_24dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextNomorTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextemail"
+                android:layout_marginTop="5dp"
+                android:ems="22"
+                android:hint="No. Telepon"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_smartphone_pink_24dp"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logout"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                app:fabSize="normal" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

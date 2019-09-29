@@ -1,0 +1,80 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/gambar_sayur"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sayur"
+        />
+
+    <Button
+        android:id="@+id/btn_ubahgambarsayur"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_xml_btn_yellow"
+        android:drawableLeft="@drawable/ic_add_a_photo"
+        android:paddingLeft="5dp"
+        android:text="Ubah"
+        android:textColor="#ffff"
+        android:textSize="14sp" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txt_namabuku"
+            android:hint="Nama Buku"
+            android:drawablePadding="5dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txt_hargabuku"
+            android:hint="Harga"
+            android:paddingLeft="0dp"
+            android:drawablePadding="5dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/kuantitas"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TAMBAH"
+        android:id="@+id/btn_tambah"
+        android:textColor="#fff"
+        android:background="@drawable/selector_xml_btn_green"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

@@ -1,0 +1,278 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.btn-modif{
+    background-color: #5a95f4;
+    color: white;   
+    border-color: #5a95f4;
+}
+
+.btn-modif:hover, .btn-modif:focus{
+    background-color: #4158d0;
+    border-color: #4158d0;
+    color: white;
+}
+.btn-logout{
+    background-color: #222d32;
+    border-color: #222d32;
+    color: white;
+}
+.btn-logout:hover{
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+}
+
+.form-group .form-control{
+    box-shadow: none;
+    margin-bottom: 5px;
+}
+
+.form-control:focus{
+    border-color: #4158d0;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color:  #3c8dbc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.icon a:hover{
+    opacity: .5%;
+}
+
+.section-left-side{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.section-left-side a{
+    color: #c6baba;
+    text-decoration: none;
+}
+
+.section-left-side a:hover{
+    color: white;
+}
+.active, .menu:hover {
+    color: white;
+}
+
+.section-core{
+    width: 100%;
+    padding-bottom: 300px;
+}
+
+footer{
+    padding: 10px;
+    width: 100%;
+    background-color:#ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.all-header{
+    width: 100%;
+}
+
+.section-content{
+    padding: 20px;
+}
+
+.status-pesanan-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+.status-pesanan-container:hover{
+    background-color: #F0F0ED;
+    cursor: pointer;
+}
+
+.buku-home-container, .user-home-container, .manage-buku-container{
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border: 3px solid #bdc3c7;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.buku-home-container, .user-home-container{
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.buku-home-container:hover, .user-home-container:hover, .manage-buku-container:hover{
+    cursor: pointer;
+    border: 3px solid #5a95f4;
+}
+
+.buku-home-img{
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%; 
+}
+
+.buku-home-img-home{
+    width: 100%;
+    height: 270px;
+    background-size: 100% 100%; 
+}
+
+.bukti-img{
+    width: 100%;
+    height: 250px;
+    background-size: 100% 100%; 
+}
+
+.user-home-img{
+    width: 100%;
+    height: 200px;
+    background-size: 100% 100%; 
+}
+
+.manage-buku-header-search{
+    margin-top: 10px;
+}
+
+.manage-buku-header-search .form-control{
+    box-shadow: none;
+}
+
+.manage-buku-header-search .input-lg{
+    color: black;
+    border-color: #5a95f4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+}
+
+.manage-buku-header-search button{
+    padding: 0px 2px 3px 0px;
+    background-color: white;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.manage-buku-header-search button:hover{
+    background-color: white;
+}
+
+.manage-buku-header-search button:focus{
+    background-color: white;
+    box-shadow: none;
+}
+
+.manage-buku-header-search img{
+    background-size: 100% 100%;
+    width: 30px;
+}
+
+.image-upload-btn{
+    width: 100%;
+}
+
+.input-image{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.image-place-upload{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.image-place-upload img{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.btn-tambah-buku{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.navbar-home .navbar-inner .logo-navbar img {
+    width: 1px;
+    height : 1px;
+}
+.navbar-home .navbar-inner .nav ul li {
+    display: inline;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.btn-modif-hapus{
+    background-color:#fc2828;
+    color: white;   
+    border-color: #fc2828;
+    width: 100%;
+    margin-top: 50px;
+}
+.btn-modif-hapus:hover, .btn-modif-hapus:focus{
+    background-color: #f45555;
+    border-color: #f45555;
+    color: white;
+}
+
+.datatable-home-container{
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border-radius: 8px;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.datatable-home-container{
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+
+
+.modal {
+    position:F fixed;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+  
+

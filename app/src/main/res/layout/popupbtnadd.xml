@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_gravity="fill"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorFrameBackground"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="98dp"
+                android:layout_height="87dp"
+                android:contentDescription="@string/todo"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/textView_namaSayur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageView"
+                android:text="@string/bayam"
+                android:textColor="@color/colorTextGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_kuantitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_namaSayur"
+                android:layout_toRightOf="@id/imageView"
+                android:text="@string/harga_ikat"
+                android:textColor="#afafaf"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView_hargaSayur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_kuantitas"
+                android:layout_toRightOf="@id/imageView"
+                android:text="@string/rp_8_000"
+                android:textColor="@color/colorTextOrange"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="91dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/custom_layout"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:id="@+id/buttonMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/minus_btn" />
+
+                <TextView
+                    android:id="@+id/textView_jumlahBuku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextGreen"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonPlus"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:background="@drawable/btn_add" />
+
+            </LinearLayout>
+
+            <Button
+                android:elevation="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/selector_xml_btn_green"
+                android:text="Add"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_shopping_basket"
+                android:textColor="#ffffff"
+                android:layout_marginTop="40dp"
+                android:id="@+id/tes"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

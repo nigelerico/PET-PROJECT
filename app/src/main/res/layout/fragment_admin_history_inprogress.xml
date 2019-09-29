@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.FragmentAdminHistoryInprogress">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_admin_inprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="9dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/textView_barang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/textView_kirim"
+                    android:text="No. Pesanan :"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_barang1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@id/textView_tanggal"
+                    android:layout_below="@id/textView_barang"
+                    android:text="text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView_barang2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/textView_status"
+                    android:layout_below="@id/textView_barang1"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Metode Pembayaran :"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/textView_barang3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/textView_barang2"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="text"
+                    android:layout_toLeftOf="@id/textView_tanggal"
+                    android:textSize="14sp"
+                    android:layout_alignParentLeft="true"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:text="Waktu Pemesanan :"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_below="@id/textView_tanggal"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:text="Status :"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:layout_below="@id/textView_kirim"
+                    android:text="18 04 2018"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:layout_below="@id/textView_status"
+                    android:text="08.00 WIB"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

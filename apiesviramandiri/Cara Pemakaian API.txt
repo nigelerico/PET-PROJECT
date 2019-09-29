@@ -1,0 +1,12 @@
+Cara konfigurasi awal:
+1. Buat file .env jika file tersebut tidak ada pada folder apiesviramandiri dan copy pastekan isinya dari file .env.example dan sesuaikan configurasinya sesuai server masing-masing dan gantilah APP_NAME= menjadi APP_NAME=apiesviramandiri
+2. Download dan install composer dari web https://getcomposer.org/download/
+3. Setelah terinstall masuk ke directory apiesviramandiri melalui terminal atau cmd kemudian ketik "composer install"
+4. Setelah proses install selesai pada terminal atau cmd ketik "php artisan key:generate"
+5. Kemudian setelah proses selesai ketikkan kembali di terminal atau cmd dengan mengetikkan "php artisan passport:install" namun jika pada pesan/respon di cmd atau terminal user telah dibuat sebelumnya maka ketikkan "php artisan passport:install --force"
+6. Jika web esvira di buka di server local atau localhost maka ketikkan di cmd atau terminal "php artisan serve" agar web esvira dapat menjadi server dan api dapat digunakan
+7. Namun jika web esvira di upload ke server maka web bisa langsung digunakan 
+
+Akun admin:
+email: nigelerico1@gmail.com	
+password: amutmontes
